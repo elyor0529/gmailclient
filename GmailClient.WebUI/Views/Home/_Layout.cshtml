@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Mailbox";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (ViewBag.Filter != null)
+{
+    @Html.Partial("Partials/_FilterPartial", (MessageFilterViewModel)ViewBag.Filter)
+
+    <hr />
+}
+
+<div class="col-sm-2 sidebar h-scroll">
+    <ul class="nav nav-sidebar">
+        @foreach (var item in (IEnumerable<string>)ViewBag.Mailboxes)
+        {
+            <li @(item == ViewBag.Mailbox ? "class=active" : "")>
+                <a href="@Url.Action("Index",new { mailbox =item })">@item</a>
+            </li>
+        }
+    </ul>
+</div>
+<div class="col-sm-10 main">
+    <div class="page-header">
+        <h2>@ViewBag.SubTitle</h2>
+    </div>
+    @RenderBody()
+</div>
+
+@section styles{
+    <link href="@Url.Content("~/Assets/components/bootstrap-datepicker/css/bootstrap-datepicker3.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Assets/components/DataTables/media/css/dataTables.bootstrap.min.css")" rel="stylesheet" />
+    <style>
+        .h-scroll {
+            height: 400px;
+            overflow: scroll;
+        }
+    </style>
+}
+
+@section scripts{
+    <script src="@Url.Content("~/Assets/components/bootstrap-datepicker/js/bootstrap-datepicker.min.js")"></script>
+    <script src="@Url.Content("~/Assets/components/DataTables/media/js/jquery.dataTables.min.js")"></script>
+    <script src="@Url.Content("~/Assets/components/DataTables/media/js/dataTables.bootstrap.min.js")"></script>
+    <script>
+        $(document).ready(function () {
+            $('#datatable').DataTable({
+                "scrollY": '400px',
+                "scrollCollapse": true,
+                "pagingType": "full_numbers"
+            });
+
+            $('#LastDate').datepicker({
+                format: "mm/dd/yyyy",
+                weekStart: 1,
+                todayBtn: true,
+                calendarWeeks: true,
+                autoclose: true,
+                todayHighlight: true
+            });
+
+            $('#para').delay(2000).hide(500);
+        });
+    </script>
+    @Scripts.Render("~/bundles/jqueryval")
+}

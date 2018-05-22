@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Engineer">
+    <meta name="author" content="Elyor Latipov">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="@Url.Content("~/Assets/images/favicon.jpg")" />
+    <title>@ViewBag.Title - Gmail Client</title>
+
+    @Html.Partial("Partials/_HeaderPartial")
+    @RenderSection("styles", false)
+
+</head>
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                @Html.Partial("Partials/_MenuPartial")
+            </nav>
+            <h3 class="text-muted">Gmail Client</h3>
+        </div>
+        <h2>@ViewBag.Title</h2>
+        <div class="row marketing">
+            @RenderBody()
+        </div>
+        <footer class="footer">
+            <p>
+                <a href="https://www.crossover.com/" target="_blank"><img src="@Url.Content("~/Assets/images/logo.png")" height="75" width="265"></a>
+                &nbsp;&nbsp; &copy; @DateTime.Now.Year - Gmail Client
+            </p>
+        </footer>
+    </div>
+
+    @Html.Partial("Partials/_FooterPartial")
+    @RenderSection("scripts", false)
+</body>
+</html>

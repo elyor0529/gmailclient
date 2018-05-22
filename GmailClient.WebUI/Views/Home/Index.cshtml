@@ -1,0 +1,41 @@
+﻿@model MessageListViewModel
+@{
+    Layout = "~/Views/Home/_Layout.cshtml";
+    ViewBag.SubTitle = ViewBag.Mailbox;
+}
+
+@if (TempData[Settings.KEYS.TMP_SUCCESS_KEY] != null)
+{
+    <h4 class="text-success" id="para">@TempData[Settings.KEYS.TMP_SUCCESS_KEY]</h4>
+}
+
+
+<table id="datatable" class="table table-bordered table-responsive" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>From</th>
+            <th>Subject</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+            {
+            <tr @(item.Readed ? Html.Raw("class='active'") : Html.Raw("style='font-weight:bold;'"))>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.UId, mailbox = ViewBag.Mailbox }, new { @class = "btn btn-sm btn-danger", onclick = "return confirm('Are you sure that you want permanently delete the selected item(s)?');" })
+                </td>
+                <td>@item.From</td>
+                <td>
+                    @Html.ActionLink(item.Subject, "Details", new { id = item.UId, mailbox = ViewBag.Mailbox })
+                </td>
+                <td>@item.Date</td>
+            </tr>
+        }
+    </tbody>
+</table>
+ 
+<p>
+    @Html.ActionLink("Compose", "Compose", null, new { @class = "btn btn-sm btn-primary" })
+</p>

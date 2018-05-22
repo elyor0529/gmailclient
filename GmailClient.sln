@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmailClient.WebUI", "GmailClient.WebUI\GmailClient.WebUI.csproj", "{2ACA54B0-A08A-418B-AB04-D41D2056A2A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B0A544A6-F4F3-40E7-9ED4-CD0B0344D3BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{C51B88CD-BC59-4C57-B3FF-D2CD72C8FAF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{985F205C-51B4-4E8A-93D4-24C678CC273F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmailClient.UnitTest", "GmailClient.UnitTest\GmailClient.UnitTest.csproj", "{930EE177-DFE4-4D8F-936C-FAF4126CB4A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmailClient.Framework", "GmailClient.Framework\GmailClient.Framework.csproj", "{11F320F5-308D-4F27-AC88-3996831AF89A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ACA54B0-A08A-418B-AB04-D41D2056A2A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACA54B0-A08A-418B-AB04-D41D2056A2A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACA54B0-A08A-418B-AB04-D41D2056A2A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACA54B0-A08A-418B-AB04-D41D2056A2A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{930EE177-DFE4-4D8F-936C-FAF4126CB4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{930EE177-DFE4-4D8F-936C-FAF4126CB4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{930EE177-DFE4-4D8F-936C-FAF4126CB4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{930EE177-DFE4-4D8F-936C-FAF4126CB4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11F320F5-308D-4F27-AC88-3996831AF89A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F320F5-308D-4F27-AC88-3996831AF89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F320F5-308D-4F27-AC88-3996831AF89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F320F5-308D-4F27-AC88-3996831AF89A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ACA54B0-A08A-418B-AB04-D41D2056A2A2} = {C51B88CD-BC59-4C57-B3FF-D2CD72C8FAF7}
+		{930EE177-DFE4-4D8F-936C-FAF4126CB4A5} = {985F205C-51B4-4E8A-93D4-24C678CC273F}
+		{11F320F5-308D-4F27-AC88-3996831AF89A} = {B0A544A6-F4F3-40E7-9ED4-CD0B0344D3BA}
+	EndGlobalSection
+EndGlobal

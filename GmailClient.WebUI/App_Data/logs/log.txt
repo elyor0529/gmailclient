@@ -1,0 +1,17 @@
+2016-01-20 08:46:26,308 [13] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 2 messages
+2016-01-20 08:48:08,805 [27] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 2 messages
+2016-01-20 08:48:35,525 [27] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 2 messages
+2016-01-20 08:50:45,928 [27] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Readed #9959 message from INBOX
+2016-01-20 08:51:06,345 [27] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 2 messages
+2016-01-20 08:52:06,757 [27] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - <log4net.Error>Exception during StringFormat: Index (zero based) must be greater than or equal to zero and less than the size of the argument list. <format>Sended message to {1}</format><args>{CrossOver test message}</args></log4net.Error>
+2016-01-20 08:52:10,146 [13] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 2 messages
+2016-01-20 08:55:11,936 [6] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 18 messages
+2016-01-26 06:16:00,818 [12] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 3 messages
+2016-01-26 06:22:21,671 [10] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 3 messages
+2016-01-26 06:24:50,383 [12] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 0 messages
+2016-01-26 06:25:16,003 [12] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 3 messages
+2016-01-26 06:26:50,603 [14] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 0 messages
+2016-01-26 06:27:03,310 [14] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 3 messages
+2016-01-26 06:27:20,734 [13] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Readed #34 message from Docs
+2016-01-26 06:28:05,803 [14] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 0 messages
+2016-01-26 06:28:17,245 [14] INFO  GmailClient.WebUI.BLL.Controllers.BaseController [(null)] - Filter 3 messages
